@@ -1,0 +1,15 @@
+{
+  "name": "debug",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "ember-basic-dropdown": "git+https://github.com/c0rydoras/ember-basic-dropdown#956d9840ab6fd4129dc95c3dcc05f7dc7ed183f1"
+  }
+}

@@ -1,0 +1,9 @@
+packages:
+  - debug
+
+autoInstallPeers: false
+
+onlyBuiltDependencies:
+  - core-js
+  - esbuild
+  - ember-basic-dropdown
