@@ -26,13 +26,16 @@ jobs:
         uses: pnpm/action-setup@v4.2.0
 
       - name: debug
-        run:
-          node -v
+        run: |
+          mkdir -p ~/.local/share/pnpm/store/v10
+          pnpm config set store-dir ~/.local/share/pnpm/store/v10
 
       - uses: actions/setup-node@v6
         with:
           node-version: ${{ env.NODE_VERSION }}
           cache: pnpm
           cache-dependency-path: pnpm-lock.yaml
+
+      - run: pnpm install
 
       - run: echo "yay"
