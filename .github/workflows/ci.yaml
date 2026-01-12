@@ -4,7 +4,6 @@ name: CI
 on:
   push:
     branches: [main]
-    paths: ['debug/**']
   pull_request:
     paths: ['debug/**']
 
@@ -33,6 +32,6 @@ jobs:
           cache-dependency-path: pnpm-lock.yaml
 
       - name: Install dependencies
-        run: pnpm install --no-frozen-lockfile
+        run: pnpm install
 
       - run: echo "yay"
